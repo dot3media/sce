@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#AA2020;}
+	.st1{fill:#7C5C4F;}
+	.st2{fill:#48A1AF;}
+	.st3{fill:#AC785B;}
+	.st4{fill:#ADE0F7;}
+	.st5{fill:#122528;}
+	.st6{fill:#E1E2D4;}
+	.st7{fill:#E22929;}
+	.st8{fill:#E24844;}
+	.st9{fill:#E24D87;}
+	.st10{fill:#E2607F;}
+	.st11{fill:#E27A7A;}
+	.st12{fill:#E2D8A6;}
+	.st13{fill:#E2D9B3;}
+	.st14{fill:#E4E4E4;}
+	.st15{fill:#E54615;}
+	.st16{fill:#4ABC96;}
+	.st17{fill:#E5A079;}
+	.st18{fill:#E5A300;}
+	.st19{fill:#E5AAAA;}
+	.st20{fill:#E5B428;}
+	.st21{fill:#E5C2B7;}
+	.st22{fill:#E5DCD6;}
+	.st23{fill:#178484;}
+	.st24{fill:#4BA6DD;}
+	.st25{fill:#191E18;}
+	.st26{fill:#E7E0DC;}
+	.st27{fill:#E7E4E2;}
+	.st28{fill:#E85B8A;}
+	.st29{fill:#E8BF13;}
+	.st30{fill:#E8CA4B;}
+	.st31{fill:#E8CDCD;}
+	.st32{fill:#E8F4F4;}
+	.st33{fill:#4E4F4F;}
+	.st34{fill:#4F4846;}
+	.st35{fill:#B08C8C;}
+	.st36{fill:#B2B2B2;}
+	.st37{fill:#1A7877;}
+	.st38{fill:#1B1B1B;}
+	.st39{fill:#86BFAB;}
+	.st40{fill:#EA4949;}
+	.st41{fill:#EA950C;}
+	.st42{fill:#EA9C00;}
+	.st43{fill:#EAC2B0;}
+	.st44{fill:#EAD08F;}
+	.st45{fill:#EAD988;}
+	.st46{fill:#EAE0A7;}
+	.st47{fill:#EAE19B;}
+	.st48{fill:#B7967F;}
+	.st49{fill:#B7E4D5;}
+	.st50{fill:#B8D1E5;}
+	.st51{fill:#ECBF30;}
+	.st52{fill:#ECEDE2;}
+	.st53{fill:#ED3232;}
+	.st54{fill:#EDB721;}
+	.st55{fill:#EDBF00;}
+	.st56{fill:#EDC92F;}
+	.st57{fill:#EDEDED;}
+	.st58{fill:#EE8080;}
+	.st59{fill:#514D46;}
+	.st60{fill:#EF481B;}
+	.st61{fill:#EF4B4B;}
+	.st62{fill:#EFBBA0;}
+	.st63{fill:#EFBBBB;}
+	.st64{fill:#EFC6AF;}
+	.st65{fill:#EFC866;}
+	.st66{fill:#EFD3D3;}
+	.st67{fill:#EFEDEC;}
+	.st68{fill:#EFF4F9;}
+	.st69{fill:#BA1713;}
+	.st70{fill:#57AA39;}
+	.st71{fill:#BAADAB;}
+	.st72{fill:#8BBEC0;}
+	.st73{fill:#8CC3CC;}
+	.st74{fill:#599E6B;}
+	.st75{fill:#BC9F66;}
+	.st76{fill:#BCBCBC;}
+	.st77{fill:#8FB5B6;}
+	.st78{fill:#228080;}
+	.st79{fill:#22A85B;}
+	.st80{fill:#F1A6B3;}
+	.st81{fill:#235D64;}
+	.st82{fill:#F29292;}
+	.st83{fill:#242C23;}
+	.st84{fill:#F2C7B1;}
+	.st85{fill:#F2D249;}
+	.st86{fill:#F2ECB3;}
+	.st87{fill:#F2EFE2;}
+	.st88{fill:#F2EFED;}
+	.st89{fill:#24BCB1;}
+	.st90{fill:#F47C2C;}
+	.st91{fill:#F47D94;}
+	.st92{fill:#262626;}
+	.st93{fill:#263C92;}
+	.st94{fill:#5B3224;}
+	.st95{fill:#5B4F3F;}
+	.st96{fill:#5B7BAA;}
+	.st97{fill:#27C1C1;}
+	.st98{fill:#282827;}
+	.st99{fill:#28898E;}
+	.st100{fill:#28A7AD;}
+	.st101{fill:#F781AE;}
+	.st102{fill:#5CB7E5;}
+	.st103{fill:#F7CA4D;}
+	.st104{fill:#F7D64D;}
+	.st105{fill:#297358;}
+	.st106{fill:#F95E3A;}
+	.st107{fill:#5EACB4;}
+	.st108{fill:#909090;}
+	.st109{fill:#C0C0C0;}
+	.st110{fill:#C3C3C3;}
+	.st111{fill:#94C5C5;}
+	.st112{fill:#C48769;}
+	.st113{fill:#C4A10E;}
+	.st114{fill:#969595;}
+	.st115{fill:#2B6671;}
+	.st116{fill:#C6C5C4;}
+	.st117{fill:#FAD3D3;}
+	.st118{fill:#97E079;}
+	.st119{fill:#2D2D2D;}
+	.st120{fill:#FBCBAB;}
+	.st121{fill:none;stroke:#6E4832;stroke-width:2.2943;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st122{fill:#9996FD;}
+	.st123{fill:#FCE2E2;}
+	.st124{fill:#C92727;}
+	.st125{fill:#C9C9C8;}
+	.st126{fill:#2F2E33;}
+	.st127{opacity:0.6;}
+	.st128{fill:#616262;}
+	.st129{fill:#FFFFFF;}
+	.st130{fill:#62BB45;}
+	.st131{fill:#644B44;}
+	.st132{fill:#64A80D;}
+	.st133{fill:none;}
+	.st134{fill:#CA261D;}
+	.st135{fill:#CBBEB9;}
+	.st136{fill:#CC8866;}
+	.st137{fill:#6997B7;}
+	.st138{fill:#CCBF7F;}
+	.st139{display:inline;}
+	.st140{fill:#9DC3C5;}
+	.st141{fill:#CDC6C3;}
+	.st142{fill:#CDCCCB;}
+	.st143{fill:#CDCDCE;}
+	.st144{fill:#CE8505;}
+	.st145{fill:#CE8967;}
+	.st146{fill:#323531;}
+	.st147{fill:#337180;}
+	.st148{fill:#353432;}
+	.st149{fill:#353535;}
+	.st150{fill:#357180;}
+	.st151{fill:#367983;}
+	.st152{fill:#369975;}
+	.st153{fill:#6A7872;}
+	.st154{fill:#6AA0C8;}
+	.st155{fill:#3786B7;}
+	.st156{fill:#6D4F44;}
+	.st157{fill:#6D8DC6;}
+	.st158{fill:#6E4832;}
+	.st159{fill:#D0D1D1;}
+	.st160{fill:#D0E3E5;}
+	.st161{fill:#D39475;}
+	.st162{fill:#D3C2C2;}
+	.st163{fill:#3A3A39;}
+	.st164{fill:#3A3F39;}
+	.st165{fill:#D5CEC9;}
+	.st166{fill:#3CA57F;}
+	.st167{fill:#090A09;}
+	.st168{fill:#D7D7D7;}
+	.st169{fill:#D7E2E2;}
+	.st170{fill:#3D2F26;}
+	.st171{fill:#3D8B93;}
+	.st172{fill:#D89898;}
+	.st173{fill:#D8BD80;}
+	.st174{fill:#D8D1CE;}
+	.st175{fill:#D8D8D8;}
+	.st176{fill:#D8DBBA;}
+	.st177{fill:#D9EDED;}
+	.st178{fill:#3F3938;}
+	.st179{display:none;}
+	.st180{fill:#A2CB6E;}
+	.st181{fill:#A2D4DE;}
+	.st182{fill:#A3D5E0;}
+	.st183{fill:#76C6CE;}
+	.st184{fill:#77CCF2;}
+	.st185{fill:#77D28E;}
+	.st186{fill:#0CA342;}
+	.st187{fill:#DB3737;}
+	.st188{fill:#DBD6D4;}
+	.st189{fill:#DC3735;}
+	.st190{fill:#DCD2CC;}
+	.st191{fill:#A9A9C8;}
+	.st192{fill:#DDB717;}
+	.st193{fill:#DDD3CC;}
+	.st194{fill:#408921;}
+	.st195{fill:#4094D3;}
+	.st196{fill:#41979F;}
+	.st197{fill:#DFA17C;}
+]]>
+</style>
+<g>
+	<g>
+		<g>
+			<path class="st2" d="M256.003,7.924c-137.012,0-248.082,111.06-248.082,248.082c0,137.001,111.07,248.07,248.082,248.07
+				c137.006,0,248.076-111.069,248.076-248.07C504.079,118.983,393.009,7.924,256.003,7.924z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<g>
+				<g>
+					<polygon class="st56" points="305.848,221.476 205.689,221.476 205.88,280.873 305.847,349.62 305.847,349.681 305.893,349.65 
+						305.937,349.681 305.937,349.62 					"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<polygon class="st106" points="306.038,152.667 205.98,221.476 306.038,290.285 406.095,221.476 					"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<g>
+						<ellipse class="st15" cx="306.111" cy="254.915" rx="17.179" ry="13.405"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="288.933" y="246.168" class="st15" width="34.21" height="8.747"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<ellipse class="st106" cx="306.111" cy="246.18" rx="17.179" ry="13.404"/>
+					</g>
+				</g>
+			</g>
+			<g>
+				<g>
+					<g>
+						<ellipse class="st15" cx="250.427" cy="218.963" rx="17.178" ry="13.405"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="233.249" y="210.216" class="st15" width="34.211" height="8.746"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<ellipse class="st106" cx="250.427" cy="210.228" rx="17.178" ry="13.405"/>
+					</g>
+				</g>
+			</g>
+			<g>
+				<g>
+					<g>
+						<ellipse class="st15" cx="361.794" cy="219.836" rx="17.177" ry="13.405"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="344.617" y="211.089" class="st15" width="34.21" height="8.747"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<ellipse class="st106" cx="361.794" cy="211.101" rx="17.177" ry="13.404"/>
+					</g>
+				</g>
+			</g>
+			<g>
+				<g>
+					<g>
+						<ellipse class="st15" cx="305.02" cy="183.15" rx="17.179" ry="13.404"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="287.841" y="174.404" class="st15" width="34.21" height="8.746"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<ellipse class="st106" cx="305.02" cy="174.416" rx="17.179" ry="13.405"/>
+					</g>
+				</g>
+			</g>
+		</g>
+		<g>
+			<g>
+				<g>
+					<polygon class="st15" points="205.689,221.476 205.88,280.873 219.466,290.215 105.905,290.215 106.095,349.611 
+						206.063,418.358 206.063,418.42 206.107,418.389 206.153,418.42 206.153,418.358 306.12,349.611 306.12,349.494 
+						405.906,280.873 406.095,221.476 					"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<polygon class="st60" points="206.063,290.215 105.905,290.215 106.095,349.611 206.063,418.358 206.063,418.42 
+						206.107,418.389 206.153,418.42 206.153,418.358 					"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<polygon class="st106" points="206.252,221.406 106.196,290.215 206.252,359.023 306.311,290.215 					"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<g>
+						<ellipse class="st15" cx="206.327" cy="323.653" rx="17.18" ry="13.405"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="189.147" y="314.907" class="st15" width="34.211" height="8.747"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<ellipse class="st106" cx="206.327" cy="314.919" rx="17.18" ry="13.405"/>
+					</g>
+				</g>
+			</g>
+			<g>
+				<g>
+					<g>
+						<ellipse class="st15" cx="150.643" cy="287.701" rx="17.178" ry="13.405"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="133.464" y="278.955" class="st15" width="34.21" height="8.747"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<ellipse class="st106" cx="150.643" cy="278.966" rx="17.178" ry="13.405"/>
+					</g>
+				</g>
+			</g>
+			<g>
+				<g>
+					<g>
+						<ellipse class="st15" cx="262.01" cy="288.574" rx="17.178" ry="13.405"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="244.832" y="279.829" class="st15" width="34.21" height="8.746"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<ellipse class="st106" cx="262.01" cy="279.839" rx="17.178" ry="13.404"/>
+					</g>
+				</g>
+			</g>
+			<g>
+				<g>
+					<g>
+						<ellipse class="st15" cx="205.235" cy="251.888" rx="17.179" ry="13.404"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="188.056" y="243.142" class="st106" width="34.211" height="8.746"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<ellipse class="st106" cx="205.235" cy="243.154" rx="17.179" ry="13.405"/>
+					</g>
+				</g>
+			</g>
+		</g>
+		<g>
+			<g>
+				<g>
+					<polygon class="st29" points="205.689,162.389 205.88,221.786 305.847,290.533 305.847,290.594 305.893,290.563 
+						305.937,290.594 305.937,290.533 405.906,221.786 406.095,162.389 					"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<polygon class="st56" points="305.848,162.389 205.689,162.389 205.88,221.786 305.847,290.533 305.847,290.594 
+						305.893,290.563 305.937,290.594 305.937,290.533 					"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<polygon class="st104" points="306.038,93.58 205.98,162.389 306.038,231.198 406.095,162.389 					"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<g>
+						<ellipse class="st29" cx="306.111" cy="195.828" rx="17.179" ry="13.405"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="288.933" y="187.082" class="st29" width="34.21" height="8.747"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<ellipse class="st104" cx="306.111" cy="187.094" rx="17.179" ry="13.405"/>
+					</g>
+				</g>
+			</g>
+			<g>
+				<g>
+					<g>
+						<ellipse class="st29" cx="250.427" cy="159.876" rx="17.178" ry="13.405"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="233.249" y="151.129" class="st29" width="34.211" height="8.747"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<ellipse class="st104" cx="250.427" cy="151.141" rx="17.178" ry="13.404"/>
+					</g>
+				</g>
+			</g>
+			<g>
+				<g>
+					<g>
+						<ellipse class="st29" cx="361.794" cy="160.75" rx="17.177" ry="13.404"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="344.617" y="152.003" class="st29" width="34.21" height="8.746"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<ellipse class="st104" cx="361.794" cy="152.014" rx="17.177" ry="13.404"/>
+					</g>
+				</g>
+			</g>
+			<g>
+				<g>
+					<g>
+						<ellipse class="st29" cx="305.02" cy="124.063" rx="17.179" ry="13.405"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="287.841" y="115.317" class="st29" width="34.21" height="8.746"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<ellipse class="st104" cx="305.02" cy="115.329" rx="17.179" ry="13.405"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
