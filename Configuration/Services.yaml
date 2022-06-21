@@ -1,0 +1,6 @@
+services:
+  D3M\Sce\Listener\PageTsConfig:
+    tags:
+      - name: event.listener
+        identifier: 'tx-sce-page-ts-config'
+        event: TYPO3\CMS\Core\Configuration\Event\ModifyLoadedPageTsConfigEvent
