@@ -146,6 +146,15 @@ class Registry implements SingletonInterface
         if (empty($GLOBALS['TCA']['tt_content']['sceConfiguration'])) {
             return [$TSdataArray, $id, $rootLine, $returnPartArray];
         }
+        $TSdataArray['default'] = $this->getPageTsString();
+        return [$TSdataArray, $id, $rootLine, $returnPartArray];
+    }
+
+    public function getPageTsString(): string
+    {
+        if (empty($GLOBALS['TCA']['tt_content']['sceConfiguration'])) {
+            return '';
+        }
 
         // Group containers by group
         $groupedByGroup = [];
@@ -181,9 +190,9 @@ class Registry implements SingletonInterface
                     }';
             }
 
-            $TSdataArray['default'] .= LF . $content;
+            $pageTs .= LF . $content;
         }
 
-        return [$TSdataArray, $id, $rootLine, $returnPartArray];
+        return $pageTs;
     }
 }
