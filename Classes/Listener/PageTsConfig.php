@@ -14,18 +14,14 @@ namespace D3M\Sce\Listener;
 
 use D3M\Sce\Tca\Registry;
 use TYPO3\CMS\Core\Configuration\Event\ModifyLoadedPageTsConfigEvent;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-class PageTsConfig
+final class PageTsConfig
 {
-    /**
-     * @var Registry
-     */
-    protected $tcaRegistry;
+    protected Registry $tcaRegistry;
 
-    public function __construct(Registry $tcaRegistry = null)
+    public function __construct(Registry $tcaRegistry)
     {
-        $this->tcaRegistry = $tcaRegistry ?? GeneralUtility::makeInstance(Registry::class);
+        $this->tcaRegistry = $tcaRegistry;
     }
 
     public function __invoke(ModifyLoadedPageTsConfigEvent $event): void

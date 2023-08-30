@@ -1,4 +1,12 @@
 services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  D3M\Sce\:
+    resource: '../Classes/*'
+
   D3M\Sce\Listener\PageTsConfig:
     tags:
       - name: event.listener

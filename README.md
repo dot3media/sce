@@ -1,6 +1,6 @@
 # EXT:sce - A TYPO3 extension for creating simple content elements
 
-Webpages ca be seen as a composition of 3 elements: grids building the structure (sections or columns), containers like a card container containing several cards and very often quite simple content elements (like text elements with header and text). Some of these content elements may have the same fields, but they 'behave' differently in different contexts e.g. a text element can be a rendered as 'normal' text or as a card in a card container. 
+Webpages ca be seen as a composition of 3 elements: grids building the structure (sections or columns), containers like a card container containing several cards and very often quite simple content elements (like text elements with header and text). Some of these content elements may have the same fields, but they 'behave' differently in different contexts e.g. a text element can be a rendered as 'normal' text or as a card in a card container.
 
 The idea of this extension is to have a simple way to build content elements from scratch, which are easy to configure by integrators easy to use by editors. Instead of using several layout options in the content element itself to make it fit a certain context, the suggestion of this extension is, to build as many content elements as there are contexts in your webpage. By using mainly default fields of the tt_content table, the content type can be easily switched in bulk from TYPO3-default content type to site-package-specific content type and vice versa in the database.
 
@@ -101,5 +101,5 @@ To find out, which variables are available, you can add `<f:debug>{_all}</f:debu
 
 ## Credits
 
-This extension was created by Jan-Philipp Halle ([dot3media](https://www.dot3media.de)) in 2020.  
+This extension was created by Jan-Philipp Halle ([dot3media](https://www.dot3media.de)) in 2020.
 The initial implementation heavily bases on the [container extension](https://github.com/b13/container/) by [b13 GmbH](https://b13.com).

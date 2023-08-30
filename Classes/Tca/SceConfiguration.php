@@ -12,63 +12,39 @@ namespace D3M\Sce\Tca;
  * of the License, or any later version.
  */
 
-class SceConfiguration
+final class SceConfiguration
 {
-    /**
-     * @var string
-     */
-    protected $cType = '';
+    protected string $cType = '';
+
+    protected string $label = '';
+
+    protected string $description = '';
 
     /**
-     * @var string
+     * @var array<array-key, mixed>
      */
-    protected $label = '';
+    protected array $fields = [];
 
     /**
-     * @var string
+     * @var array<array-key, mixed>
      */
-    protected $description = '';
+    protected array $palettes = [];
+
+    protected string $additionalTabs = 'none';
+
+    protected string $showitem = '';
+
+    protected string $icon = 'EXT:sce/Resources/Public/Icons/Extension.svg';
+
+    protected bool $saveAndCloseInNewContentElementWizard = false;
+
+    protected bool $registerInNewContentElementWizard = true;
+
+    protected string $group = 'sce';
 
     /**
-     * @var mixed[]
+     * @param array<string, array<string, mixed>> $fields
      */
-    protected $fields = [];
-
-    /**
-     * @var mixed[]
-     */
-    protected $palettes = [];
-
-    /**
-     * @var string
-     */
-    protected $additionalTabs = 'none';
-
-    /**
-     * @var string
-     */
-    protected $showitem = '';
-
-    /**
-     * @var string
-     */
-    protected $icon = 'EXT:sce/Resources/Public/Icons/Extension.svg';
-
-    /**
-     * @var bool
-     */
-    protected $saveAndCloseInNewContentElementWizard = false;
-
-    /**
-     * @var bool
-     */
-    protected $registerInNewContentElementWizard = true;
-
-    /**
-     * @var string
-     */
-    protected $group = 'sce';
-
     public function __construct(
         string $cType,
         string $label,
@@ -81,94 +57,36 @@ class SceConfiguration
         $this->fields = $fields;
     }
 
-    /**
-     * @param mixed[] $palettes
-     * @return SceConfiguration
-     */
-    public function setPalettes(array $palettes): SceConfiguration
-    {
-        $this->palettes = $palettes;
-        return $this;
-    }
-
-    /**
-     * @param string $icon
-     * @return SceConfiguration
-     */
     public function setIcon(string $icon): SceConfiguration
     {
         $this->icon = $icon;
         return $this;
     }
 
-    /**
-     * @param string $additionalTabs
-     * @return SceConfiguration
-     */
-    public function setAdditionalTabs(string $additionalTabs): SceConfiguration
-    {
-        $this->additionalTabs = $additionalTabs;
-        return $this;
-    }
-
-    /**
-     * @param string $showitem
-     * @return SceConfiguration
-     */
-    public function setShowitem(string $showitem): SceConfiguration
-    {
-        $this->showitem = $showitem;
-        return $this;
-    }
-
-    /**
-     * @param bool $saveAndCloseInNewContentElementWizard
-     * @return SceConfiguration
-     */
     public function setSaveAndCloseInNewContentElementWizard(bool $saveAndCloseInNewContentElementWizard): SceConfiguration
     {
         $this->saveAndCloseInNewContentElementWizard = $saveAndCloseInNewContentElementWizard;
         return $this;
     }
 
-    /**
-     * @param bool $registerInNewContentElementWizard
-     * @return SceConfiguration
-     */
     public function setRegisterInNewContentElementWizard(bool $registerInNewContentElementWizard): SceConfiguration
     {
         $this->registerInNewContentElementWizard = $registerInNewContentElementWizard;
         return $this;
     }
 
-    /**
-     * @param string $group
-     * @return SceConfiguration
-     */
-    public function setGroup(string $group): SceConfiguration
-    {
-        $this->group = $group;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
     public function getCType(): string
     {
         return $this->cType;
     }
 
-    /**
-     * @return string
-     */
     public function getLabel(): string
     {
         return $this->label;
     }
 
     /**
-     * @return mixed[]
+     * @return array<array-key, mixed>
      */
     public function getFields(): array
     {
@@ -176,7 +94,7 @@ class SceConfiguration
     }
 
     /**
-     * @return mixed[]
+     * @return array<array-key, mixed>
      */
     public function getPalettes(): array
     {
@@ -184,31 +102,49 @@ class SceConfiguration
     }
 
     /**
-     * @return string
+     * @param array<array-key, mixed> $palettes
      */
+    public function setPalettes(array $palettes): SceConfiguration
+    {
+        $this->palettes = $palettes;
+        return $this;
+    }
+
     public function getAdditionalTabs(): string
     {
         return $this->additionalTabs;
     }
 
-    /**
-     * @return string
-     */
+    public function setAdditionalTabs(string $additionalTabs): SceConfiguration
+    {
+        $this->additionalTabs = $additionalTabs;
+        return $this;
+    }
+
     public function getShowitem(): string
     {
         return $this->showitem;
     }
 
-    /**
-     * @return string
-     */
+    public function setShowitem(string $showitem): SceConfiguration
+    {
+        $this->showitem = $showitem;
+        return $this;
+    }
+
     public function getGroup(): string
     {
         return $this->group;
     }
 
+    public function setGroup(string $group): SceConfiguration
+    {
+        $this->group = $group;
+        return $this;
+    }
+
     /**
-     * @return mixed[]
+     * @return array<array-key, mixed>
      */
     public function toArray(): array
     {
@@ -222,7 +158,20 @@ class SceConfiguration
             'registerInNewContentElementWizard' => $this->registerInNewContentElementWizard,
             'additionalTabs' => $this->additionalTabs,
             'showitem' => $this->showitem,
-            'group' => $this->group
+            'group' => $this->group,
         ];
+    }
+
+    /**
+     * @param array<string, array<string, mixed>> $fields
+     */
+    public static function showItemGenerator(array $fields, string ...$showItems): string
+    {
+        $fieldKeys = array_keys($fields);
+        $showItem = implode(',', $showItems);
+        return sprintf(
+            $showItem,
+            implode(',', $fieldKeys)
+        );
     }
 }
