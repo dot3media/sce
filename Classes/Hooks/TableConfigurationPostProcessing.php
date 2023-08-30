@@ -18,21 +18,14 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class TableConfigurationPostProcessing implements TableConfigurationPostProcessingHookInterface
 {
+    protected Registry $tcaRegistry;
 
-    /**
-     * @var Registry
-     */
-    protected $tcaRegistry;
-
-    /**
-     * @param Registry|null $tcaRegistry
-     */
     public function __construct(Registry $tcaRegistry = null)
     {
         $this->tcaRegistry = $tcaRegistry ?? GeneralUtility::makeInstance(Registry::class);
     }
 
-    public function processData()
+    public function processData(): void
     {
         $this->tcaRegistry->registerIcons();
     }

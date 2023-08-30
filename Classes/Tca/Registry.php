@@ -12,6 +12,7 @@ namespace D3M\Sce\Tca;
  * of the License, or any later version.
  */
 
+use TYPO3\CMS\Core\Exception;
 use TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider;
 use TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider;
 use TYPO3\CMS\Core\Imaging\IconRegistry;
@@ -19,11 +20,8 @@ use TYPO3\CMS\Core\SingletonInterface;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-class Registry implements SingletonInterface
+final class Registry implements SingletonInterface
 {
-    /**
-     * @param SceConfiguration $sceConfiguration
-     */
     public function configureSce(SceConfiguration $sceConfiguration): void
     {
         ExtensionManagementUtility::addTcaSelectItem(
@@ -33,7 +31,7 @@ class Registry implements SingletonInterface
                 $sceConfiguration->getLabel(),
                 $sceConfiguration->getCType(),
                 $sceConfiguration->getCType(),
-                $sceConfiguration->getGroup()
+                $sceConfiguration->getGroup(),
             ]
         );
 
@@ -42,7 +40,7 @@ class Registry implements SingletonInterface
         } else {
             $fieldsArray = [];
             foreach ($sceConfiguration->getFields() as $fieldName => $fieldConfig) {
-                $fieldsArray[] = $fieldName . ($fieldConfig['label'] ? ';' . $fieldConfig['label'] : '');
+                $fieldsArray[] = $fieldName . (isset($fieldConfig['label']) ? ';' . $fieldConfig['label'] : '');
             }
             $generalTab = implode(',', $fieldsArray);
         }
@@ -86,10 +84,10 @@ class Registry implements SingletonInterface
         $GLOBALS['TCA']['tt_content']['types'][$sceConfiguration->getCType()]['showitem'] = $showitem;
 
         $overrides = [];
-        foreach ($sceConfiguration->getFields() as $fieldName => $fieldConfig) {    
-            if ($fieldConfig['columnOverrides']) {
+        foreach ($sceConfiguration->getFields() as $fieldName => $fieldConfig) {
+            if (isset($fieldConfig['columnOverrides'])) {
                 $columnOverrides = $fieldConfig['columnOverrides'];
-                if ($columnOverrides['allowedFileTypes']) {
+                if (isset($columnOverrides['allowedFileTypes'])) {
                     $columnOverrides['overrideChildTca']['columns']['uid_local']['config']['appearance']['elementBrowserAllowed'] = $columnOverrides['allowedFileTypes'];
                 }
                 $overrides[$fieldName]['config'] = $columnOverrides;
@@ -104,12 +102,12 @@ class Registry implements SingletonInterface
 
     public function registerIcons(): void
     {
-        if (is_array($GLOBALS['TCA']['tt_content']['sceConfiguration'])) {
+        if (isset($GLOBALS['TCA']['tt_content']['sceConfiguration'])) {
             $iconRegistry = GeneralUtility::makeInstance(IconRegistry::class);
             foreach ($GLOBALS['TCA']['tt_content']['sceConfiguration'] as $sceConfiguration) {
                 if (file_exists(GeneralUtility::getFileAbsFileName($sceConfiguration['icon']))) {
                     $provider = BitmapIconProvider::class;
-                    if (strpos($sceConfiguration['icon'], '.svg') !== false) {
+                    if (str_ends_with($sceConfiguration['icon'], '.svg')) {
                         $provider = SvgIconProvider::class;
                     }
                     $iconRegistry->registerIcon(
@@ -125,7 +123,7 @@ class Registry implements SingletonInterface
                             $existingIconConfiguration['provider'],
                             $existingIconConfiguration['options']
                         );
-                    } catch (\TYPO3\CMS\Core\Exception $e) {
+                    } catch (Exception $_) {
                     }
                 }
             }
@@ -134,22 +132,7 @@ class Registry implements SingletonInterface
 
     /**
      * Adds TSconfig
-     *
-     * @param array $TSdataArray
-     * @param int $id
-     * @param array $rootLine
-     * @param array $returnPartArray
-     * @return array
      */
-    public function addPageTS($TSdataArray, $id, $rootLine, $returnPartArray): array
-    {
-        if (empty($GLOBALS['TCA']['tt_content']['sceConfiguration'])) {
-            return [$TSdataArray, $id, $rootLine, $returnPartArray];
-        }
-        $TSdataArray['default'] = $this->getPageTsString();
-        return [$TSdataArray, $id, $rootLine, $returnPartArray];
-    }
-
     public function getPageTsString(): string
     {
         if (empty($GLOBALS['TCA']['tt_content']['sceConfiguration'])) {
@@ -170,8 +153,9 @@ class Registry implements SingletonInterface
             }
         }
 
+        $pageTs = '';
         foreach ($groupedByGroup as $group => $sceConfigurations) {
-            $groupLabel = $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['itemGroups'][$group] ? $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['itemGroups'][$group] : $group;
+            $groupLabel = $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['itemGroups'][$group] ?: $group;
 
             $content = '
                 mod.wizards.newContentElement.wizardItems.' . $group . '.header = ' . $groupLabel . '
